@@ -1,0 +1,12 @@
+{"service": 
+    {
+        "name": "tax",
+        "tags": ["tax"],
+        "port": 5002,
+        "check": {
+            "http":"http://127.0.0.1:5002",
+            "interval":"10s",
+            "timeout":"1s"
+        }
+    }
+}

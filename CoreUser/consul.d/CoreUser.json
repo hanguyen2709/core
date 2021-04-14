@@ -1,0 +1,12 @@
+	
+{"service": {
+    "name": "core_user",
+     "tags": ["core_user"],
+      "port": 8000,
+      "check": {
+        "http":"http://127.0.0.1:8000",
+        "interval":"10s",
+        "timeout":"1s"
+    }
+      }
+    }

@@ -2,11 +2,16 @@
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
+from django.http import HttpResponse
 from .models import CoreUsers, UserLogs
 from .serializers import CoreUsersSerializer, UserLogsSerializer
 
+def home(request):
+    return HttpResponse('My first view.')
+
 
 class UserViewSet(viewsets.ViewSet):
+    
     """
     This class has 5 methods which allow to
         - get all user (list),

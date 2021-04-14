@@ -1,0 +1,12 @@
+ 	
+{"service": {
+    "name": "invoice",
+     "tags": ["invoice"],
+      "port": 5001,
+      "check": {
+        "http":"http://127.0.0.1:5001",
+        "interval":"10s",
+        "timeout":"1s"
+    }
+      }
+    }
